@@ -48,6 +48,7 @@ Make sure you have the following installed:
 
     ```bash
     go get gofr.dev
+    docker run --name gofr-mysql -e MYSQL_ROOT_PASSWORD=password -p 2001:9092 -d mysql:8.0.30
     ```
 
 ### Configuration
