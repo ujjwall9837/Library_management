@@ -1,8 +1,11 @@
 package model
 
-type Student struct {
-	ID    int    `json:"id"`
-	Name  string `json:"name"`
-	Age   int    `json:"age"`
-	Class string `json:"class"`
+import "time"
+
+type Entries struct {
+	BookId     int       `json:"bookId"`
+	BookName   string    `json:"book_name"`
+	AuthorName string    `json:"author_name"`
+	IssuedTo   string    `json:"issued_to"`
+	IssuedDate time.Time `json:"issued_date"`
 }
